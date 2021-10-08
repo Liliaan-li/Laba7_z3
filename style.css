@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #f1e1ca;
+  font-family: 'Merriweather', serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+    width: 50%;
+    margin: .5% auto;
+}
+img{
+  width: 450px;
+  height: 350px;
+      border:3px solid black;
+}
+p{
+color: black;
+font-size: 19px;
+text-align: justify;
+margin: 0 auto;
+margin-top: 1.5%;
+}
+li{
+
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;

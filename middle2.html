@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slick Playground</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="lazy slider" data-sizes="50vw">
+    <div>
+      <img src="01.jpg" alt="">
+      <p>Шаг 1: Начнем с подготовки ингридиентов</p>
+    </div>
+    <div>
+      <img src="02.jpg" alt="">
+      <p>Шаг 2: Самое главное в карпаччо — тонко нарезать мясо.</p>
+    </div>
+    <div>
+      <img src="05.jpg" alt="">
+      <p>Шаг 3: Берём большую тарелку, на которой будем впоследствии подавать наше карпаччо, выдавливаем на неё треть лимона, выливаем треть уксуса, треть масла и высыпаем по трети соли, трав и перца. Перемешиваем и размазываем.</p>
+    </div>
+    <div>
+      <img src="07.jpg" alt="">
+      <p>Шаг 4: Теперь аккуратно выкладываем наши мясные лепестки на тарелку.
+      Смешиваем остатки масла, уксуса, специй и обильно поливаем мясо сверху.</p>
+    </div>
+    <div>
+      <img src="09.jpg" alt="">
+      <p>Шаг 5: В оригинальном рецепте мясо тут же и подаётся к столу, но в нашем случае мы накроем его пищевой плёнкой и оставим часика на три мариноваться, а только потом украсим салатом, посыплем сверху тёртым пармезаном.</p>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
+</script>
+</body>
+</html>
